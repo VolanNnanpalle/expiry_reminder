@@ -1,4 +1,4 @@
-# FreshCheck — Complete Project Plan
+# PantryPing — Complete Project Plan
 
 > **Goal:** Ship a food expiry reminder app to both App Stores and monetize with freemium.
 > **Estimated Timeline:** 8 weeks to MVP launch (10-15 hrs/week, primarily weekends)
@@ -32,9 +32,9 @@
 | Phase 4: App Store Launch | `NOT STARTED` | Weeks 7-8 |
 | Phase 5: Post-Launch & Premium | `NOT STARTED` | Weeks 9+ |
 
-**Current Phase:** Phase 0 (Pre-flight)
-**Current Week:** 0 (Not started)
-**Blockers:** None
+**Current Phase:** Phase 0 COMPLETE — Ready for Phase 1
+**Current Week:** 0 (Phase 1 starts next coding session)
+**Blockers:** None (dev accounts needed by Week 5-6, not blocking Phase 1)
 
 ---
 
@@ -42,14 +42,14 @@
 
 > **Time needed:** 1-2 hours, one weekday evening. DO NOT skip this.
 
-- [ ] **Validate app name:** Search "FreshCheck" on App Store + Google Play. Search USPTO trademark database. If taken, brainstorm alternatives NOW (e.g., ExpiryPal, FreshAlert, ShelfLife, PantryPing). Pick a name that's available on both stores.
-- [ ] **Register Apple Developer Account** ($99/year) — developer.apple.com. Verification can take 24-48 hours. Do this FIRST so it's ready by Phase 4.
-- [ ] **Register Google Play Console** ($25 one-time) — play.google.com/console. Activate immediately.
-- [ ] **Install Flutter SDK** and run `flutter doctor` — resolve all issues before Weekend 1.
-- [ ] **Create GitHub repository** — `git init`, create `.gitignore` for Flutter, first commit, push. This is non-negotiable. Every meaningful change gets committed.
-- [ ] **Verify you have Xcode + iOS simulator AND Android Studio + emulator** working. Resolving simulator issues eats entire weekends if not done upfront.
+- [x] **Validate app name:** "FreshCheck" was TAKEN (2+ apps on both stores + funded UK company). "ShelfLife" and "FreshAlert" also taken. Validated "PantryPing" as available on both App Store and Google Play. No trademark conflicts found. **Final name: PantryPing.**
+- [ ] **Register Apple Developer Account** ($99/year) — developer.apple.com. Not needed until Week 7 (TestFlight), but verification takes 24-48 hrs. **Set up by Week 6 at the latest.**
+- [ ] **Register Google Play Console** ($25 one-time) — play.google.com/console. **Needed by Week 5** for the 20-tester/14-day closed testing requirement. Set up before then.
+- [x] **Install Flutter SDK** and run `flutter doctor` — Flutter 3.41.2 installed. All checks pass (Flutter, Android toolchain, Xcode, Chrome, connected devices, network). Zero issues.
+- [x] **Create GitHub repository** — Repo at https://github.com/VolanNnanpalle/expiry_reminder.git. Initial commit with CLAUDE.md, PROJECT_PLAN.md, DEVLOG.md pushed to `main`.
+- [x] **Verify you have Xcode + iOS simulator AND Android Studio + emulator** working. Xcode 26.2 with iPhone 16 Pro / 17 Pro simulators. Android Studio with Pixel 3a API 34 emulator.
 
-**Phase 0 Gate:** All items above must be checked before starting Phase 1. Apple Developer account can be pending (it processes in background) but must be submitted.
+**Phase 0 Gate:** Dev environment items complete. Dev accounts are not blocking — they're needed by Week 5 (Google) and Week 6 (Apple). Phase 1 can begin.
 
 ---
 
@@ -71,7 +71,7 @@ The developer has limited availability:
 ### Week 1 — Project Setup + Data Layer
 
 **Saturday (4-6 hrs): Project Scaffolding**
-- [ ] Create Flutter project: `flutter create --org com.freshcheck freshcheck`
+- [ ] Create Flutter project: `flutter create --org com.pantryping pantryping`
 - [ ] `git init` + initial commit + push to GitHub (if not done in Phase 0)
 - [ ] Set up folder structure per CLAUDE.md architecture
 - [ ] Run `flutter pub outdated` and resolve to latest stable versions BEFORE adding to pubspec
@@ -505,7 +505,7 @@ The developer has limited availability:
 
 ### Monetization Implementation (Week 11-12)
 - [ ] Implement RevenueCat or in-app purchases directly
-- [ ] Define premium tier — **FreshCheck Pro** ($1.99/month or $14.99/year):
+- [ ] Define premium tier — **PantryPing Pro** ($1.99/month or $14.99/year):
   - Unlimited items (free tier: 20 items)
   - Multiple storage locations (custom categories)
   - Household sharing via iCloud/Google sync
@@ -531,11 +531,12 @@ The developer has limited availability:
 
 ### iOS App Store
 
-**App Name:** FreshCheck — Expiry Tracker
+**App Name:** PantryPing — Expiry Tracker
 **Subtitle:** Never waste food again
+**Note:** Org is `com.pantryping`, project name is `pantryping`
 
 **Description:**
-Stop throwing away expired food. FreshCheck helps you track expiration dates so you always know what to use first.
+Stop throwing away expired food. PantryPing helps you track expiration dates so you always know what to use first.
 
 SCAN & TRACK
 - Scan barcodes to instantly identify products
@@ -552,7 +553,7 @@ ORGANIZE YOUR KITCHEN
 - See everything at a glance
 - Mark items as consumed to track your waste
 
-The average household throws away $1,500 of food per year. FreshCheck helps you save money and reduce waste.
+The average household throws away $1,500 of food per year. PantryPing helps you save money and reduce waste.
 
 **Keywords:** food expiration tracker, expiry date reminder, food waste, grocery tracker, fridge organizer, best before, pantry manager, food saver, expiration date, fresh food
 
@@ -629,7 +630,7 @@ The average household throws away $1,500 of food per year. FreshCheck helps you 
 
 ### Legal Requirements
 - [ ] **Privacy Policy** — REQUIRED by both stores. Must describe camera, storage, and API usage.
-- [ ] **Food Safety Disclaimer** — "FreshCheck provides reminders based on dates you enter. Always use your judgment regarding food safety. We are not responsible for food safety decisions." Include in app + privacy policy.
+- [ ] **Food Safety Disclaimer** — "PantryPing provides reminders based on dates you enter. Always use your judgment regarding food safety. We are not responsible for food safety decisions." Include in app + privacy policy.
 - [ ] **No health claims** — Don't say "prevents food poisoning." Say "helps track expiry dates."
 
 ---

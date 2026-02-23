@@ -1,4 +1,4 @@
-# Expiry Reminder App — FreshCheck
+# Expiry Reminder App — PantryPing
 
 ## Project Overview
 A Flutter mobile app (iOS + Android) that helps users track food expiration dates to reduce waste and save money. Users can scan barcodes, use OCR to read expiry dates, or manually enter items. The app sends push notifications before items expire.
@@ -228,6 +228,7 @@ class FoodItems extends Table {
   DateTimeColumn get expiryDate => dateTime()();
   DateTimeColumn get addedDate => dateTime().withDefault(currentDateAndTime)();
   TextColumn get category => text().withDefault(const Constant('fridge'))(); // fridge, freezer, pantry
+  // NOTE: org is com.pantryping, project name is pantryping
   IntColumn get quantity => integer().withDefault(const Constant(1))();
   TextColumn get imageUrl => text().nullable()();        // Remote image (Open Food Facts)
   TextColumn get localImagePath => text().nullable()();  // User-taken photo (stored in app docs dir)

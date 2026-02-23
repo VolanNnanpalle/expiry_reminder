@@ -1,4 +1,4 @@
-# FreshCheck — Development Log
+# PantryPing — Development Log
 
 > Reverse chronological order. Newest entries at the top.
 > Every session must add an entry here. See CLAUDE.md for the required format.
@@ -93,7 +93,7 @@
 - Created `CLAUDE.md` — project context file for Claude sessions
 - Created `PROJECT_PLAN.md` — 8-week detailed plan with task checkboxes
 - Created `DEVLOG.md` — this development log
-- Evaluated 14 app ideas and selected Expiry Reminder (FreshCheck) as the highest-priority project
+- Evaluated 14 app ideas and selected Expiry Reminder (PantryPing) as the highest-priority project
 - Defined initial tech stack, database schema, project structure, and monetization strategy
 
 ### Decisions Made
@@ -102,10 +102,10 @@
 - **Problem:** Owner has 14+ app ideas and limited time. Need to pick the one most likely to succeed in the App Store and generate revenue.
 - **Options Considered:**
   1. **Friend Calendar/Planner** — Good problem but requires network effect (useless until friends also download). High risk of zero traction.
-  2. **Expiry Reminder (FreshCheck)** — Clear daily-use problem, no network effect needed, simple MVP, mature tech (OCR/barcode), food waste is trending.
+  2. **Expiry Reminder (PantryPing)** — Clear daily-use problem, no network effect needed, simple MVP, mature tech (OCR/barcode), food waste is trending.
   3. **Anime Voice/Accent Converter** — Viral potential but copyright risk, novelty may not retain users, harder to monetize.
   4. **Video Context (Kontex)** — Cool concept but technically very hard (reverse video search at scale) and copyright minefield.
-- **Chosen:** Expiry Reminder (FreshCheck)
+- **Chosen:** Expiry Reminder (PantryPing)
 - **Reasoning:** Works as a standalone app (no network effect), has a clear daily habit loop (people open their fridge every day), simple MVP scope achievable in 8 weeks with limited time, clear freemium monetization path, food waste reduction is a growing movement providing marketing angles.
 - **Tradeoffs Accepted:** Less viral potential than some ideas. Existing competitors exist (NoWaste, Fridgely). Must differentiate on scanning UX quality.
 
